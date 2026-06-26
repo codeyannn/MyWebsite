@@ -1,111 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <div class="wrapper">
-        <header>
-          <div class="logo">
-            <i class="fa-solid fa-a"></i>
-            <div class="logo-text">Muhammad Maulana Adrian</div>
-          </div>
-          <nav>
-            <div class="togglebtn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="navlinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Resume</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        <section id="home" class="hero">
-        <div class="container">
-          <div class="pic">
-            <img src="profile.jpg" alt="profile pic" />
-          </div>
-          <div class="text">
-            <h5>Hi I'm <span class="">Data Analyst</span></h5>
-            <h1>Muhammad Maulana Adrian</h1>
-            <p>
-              Halo! Saya fresh graduate Ilmu Komputer dari Universitas
-              Pendidikan Indonesia. Saya menyukai analisis data dan membuat
-              insight bermanfaat untuk bisnis.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Maulana Adrian - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Typed.js for typing effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Maul<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="hero-content reveal">
+            <h4 class="greeting">Hello, I'm</h4>
+            <h1 class="name">Muhammad Maulana <span>Adrian</span></h1>
+            <h2 class="role">I am an <span class="typing"></span></h2>
+            <p class="summary">
+                A technology enthusiast bridging Software Development and Data Engineering. 
+                Passionate about building scalable data pipelines, AI models, and efficient software systems.
             </p>
             <div class="btn-group">
-              <a href="#" class="btn active">Download CV</a>
-              <a href="mailto:maulanaa1408@upi.edu" class="btn">Email</a>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="mailto:maulana140804@gmail.com" class="btn btn-outline">Contact Me</a>
             </div>
-            <a class="social">
-              <img src="instagram.jpg" alt="instagram" />
-              <img src="pinterest.jpg" alt="pinterest" />
-              <img src="github.jpg" alt="github" />
-              <img src="linkedin.jpg" alt="linkedin" />
+            <div class="social-links">
+                <a href="https://github.com/codeyannn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-maulana-adrian/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/muhammadmln_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
-          </div>
-        </section>
-        
-        <section id="about" class="about">
-  <div class="container">
-    <div class="text">
-      <h2>About Me!</h2>
-      <p1>
-        Saya memiliki ketertarikan besar pada data science, visualisasi data, dan
-        pengembangan aplikasi sederhana.  
-        Saya selalu berusaha belajar teknologi baru untuk meningkatkan kemampuan saya
-        dalam menyelesaikan masalah.
-      </p1>
-    </div>
-  </div>
-</section>
-<section id="skills" class="skills">
-          <ul class="text">
-        <h2>Skills</h2>
-        <li>Python</li>
-        <li>SQL & Database</li>
-        <li>Data Visualization</li>
-        <li>C, Python, MySQL</li>
-        <li>Git & GitHub</li>
-      </ul>
-      <br>
-      <h2>My Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Analisis Penjualan</h3>
-          <p>Dashboard interaktif menggunakan Tableau untuk memantau tren penjualan.</p>
         </div>
-        <div class="card">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Website Portfolio</h3>
-          <p>Portofolio responsif dengan HTML, CSS, dan JavaScript.</p>
+        <div class="hero-image reveal">
+            <div class="img-box">
+                <!-- Fallback to profile.jpg based on directory list -->
+                <img src="Me1.webp" alt="Muhammad Maulana Adrian">
+            </div>
         </div>
-      </div>
     </section>
-      </div>
-      <section id="portfolio" class="portfolio">
-    <div class="container">
-    </div>
-  </section>
-        </div>
 
-        
-    </div>
-      </div>
-    </div>
-    <footer class="footer">
-    <p>&copy; 2025 Muhammad Maulana Adrian. All rights reserved.</p>
-  </footer>
-  </body>
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <h2 class="section-title reveal">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text reveal">
+                <p>
+                    I am an undergraduate Computer Science student at <strong>Universitas Pendidikan Indonesia</strong> (Expected Graduation: May 2028). 
+                    With experience in building web and mobile applications, I have learned that the true value of software lies in the data it processes. 
+                    This insight led me to shift my focus toward Data Engineering, Data Analysis, and Database Management.
+                </p>
+                <p>
+                    My recent projects include building a cryptocurrency data pipeline using Python, PostgreSQL, and Docker, as well as conducting supply chain analysis to improve retail efficiency. I combine strong expertise in SQL and ETL workflows with a solid understanding of software design principles such as OOP and MVVM.
+                </p>
+            </div>
+            <div class="stats reveal">
+                <div class="stat-box">
+                    <h3>2024</h3>
+                    <p>Started CS Degree</p>
+                </div>
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="timeline-section section-padding">
+        <h2 class="section-title reveal">Experience & <span>Education</span></h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Feb 2026 - Present</span>
+                    <h3>Asisten Praktikum (Sistem Manajemen Basis Data)</h3>
+                    <h4>Universitas Pendidikan Indonesia</h4>
+                    <p>Menjadi Asisten Praktikum pada mata kuliah Sistem Manajemen Basis Data, mempelajari, dan mewadahi adik tingkat untuk memahami mata kuliah tersebut.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Sep 2024 - May 2028</span>
+                    <h3>Bachelor of Science, Ilmu Komputer</h3>
+                    <h4>Universitas Pendidikan Indonesia</h4>
+                    <p>Focused on Software Engineering, Data Structures, Machine Learning, and Database Management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <h2 class="section-title reveal">My <span>Skills</span></h2>
+        <div class="skills-container reveal">
+            <div class="skill-category">
+                <h3>Data & AI</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Data Analytics</span>
+                    <span>Pandas</span>
+                    <span>Streamlit</span>
+                    <span>ETL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Database & DevOps</h3>
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Database Admin</span>
+                    <span>Data Migration</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Software Engineering</h3>
+                <div class="skill-tags">
+                    <span>Java</span>
+                    <span>C/C++</span>
+                    <span>OOP</span>
+                    <span>MVVM</span>
+                    <span>Git & GitHub</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web & Mobile Dev</h3>
+                <div class="skill-tags">
+                    <span>React Native</span>
+                    <span>Laravel</span>
+                    <span>Node.js</span>
+                    <span>Vue.js</span>
+                    <span>PHP</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <div class="img-placeholder" style="background: linear-gradient(45deg, var(--ocean-blue), var(--dark-blue)); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><i class="fa-solid fa-map-location-dot"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>NusaRoute</h3>
+                    <p>A routing and mapping solution tailored for specific regional needs in Indonesia. Explores optimal pathfinding and data management.</p>
+                    <div class="project-tech">
+                        <span>Software Eng</span>
+                        <span>Routing</span>
+                    </div>
+                    <a href="https://github.com/Iqbaalz28/NusaRoute" target="_blank" class="project-link">View Repository <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <div class="img-placeholder" style="background: linear-gradient(45deg, var(--dark-blue), var(--primary-blue)); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><i class="fa-solid fa-brain"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Social Media Addiction Prediction</h3>
+                    <p>Machine learning model to predict and analyze social media addiction patterns using statistical analysis and data visualization.</p>
+                    <div class="project-tech">
+                        <span>Machine Learning</span>
+                        <span>Python</span>
+                        <span>Data Science</span>
+                    </div>
+                    <a href="https://github.com/codeyannn/social-media-addiction-prediction" target="_blank" class="project-link">View Repository <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <div class="img-placeholder" style="background: linear-gradient(45deg, var(--primary-blue), var(--light-blue)); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><i class="fa-solid fa-chart-line"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Automated Crypto Data Pipeline</h3>
+                    <p>A robust data pipeline for cryptocurrency markets using Python, PostgreSQL, and Docker. Implements ETL workflows for real-time analytics.</p>
+                    <div class="project-tech">
+                        <span>Data Engineering</span>
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/codeyannn/Automated-Crypto-Data-Pipeline" target="_blank" class="project-link">View Repository <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="more-projects reveal" style="text-align: center; margin-top: 4rem;">
+            <a href="https://github.com/codeyannn" target="_blank" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Project Lebih Banyak <i class="fa-brands fa-github" style="margin-left: 8px;"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Muhammad Maulana Adrian</h3>
+            <p>Aspiring Data Engineer | Building Scalable Pipelines</p>
+            <div class="socials">
+                <a href="https://github.com/codeyannn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-maulana-adrian/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/muhammadmln_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Muhammad Maulana Adrian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
